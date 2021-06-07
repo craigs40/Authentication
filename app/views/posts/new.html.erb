@@ -1,2 +1,31 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MembersOnly</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <form class="signupForm">
+
+        <label for="name">Full name</label><br>
+        <input class="shortInput" id="name" type="text"><br>
+
+        <label for="email">Email</label><br>
+        <input class="shortInput" id="email" type="text"><br>
+
+        <label for="password">Password</label><br>
+        <input class="shortInput" id="password" type="text"><br>
+
+        <label for="confirmPassword">Confirm password</label><br>
+        <input class="shortInput" id="confirmPassword" type="text"><br>
+
+      </form>
+    <%= yield %>
+  </body>
+</html>
