@@ -12,7 +12,7 @@ This assignment consists of using the Devise gem to have a first approach at aut
 ## Getting Started
 Step 1. Clone this repository:\
 
-  Cloning a repository using the command line:\
+  **Cloning a repository using the command line:**\
     1. On GitHub, navigate to the main page of the repository.\
     2. Above the list of files, click "Code".\
     3. To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard. To\ clone the repository using an SSH key, including a certificate issued by your\ organization's SSH certificate authority, click "Use SSH", then click the clipboard. To\ clone a repository using GitHub CLI, click "Use GitHub CLI", then click the clipboard icon.\
@@ -21,13 +21,13 @@ Step 1. Clone this repository:\
     6. Type git clone, and then paste the URL you copied from the clipboard earlier.\
     7. Press Enter to create your local clone.\
 
-  Cloning a repository to GitHub Desktop:\
+  **Cloning a repository to GitHub Desktop:**\
     1. On GitHub, navigate to the main page of the repository.\
     2. Above the list of files, click "Code".\
     3. Click "Open with GitHub Desktop" to clone and open the repository with GitHub Desktop.\
     4. Follow the prompts in GitHub Desktop to complete the clone.\
 
-  Cloning a repository by downloading the ZIP file:\
+  **Cloning a repository by downloading the ZIP file:**\
     1. On GitHub, navigate to the main page of the repository.\
     2. Above the list of files, click "Code".\
     3. Click "Download ZIP"\
