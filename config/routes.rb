@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   devise_for :posts
   devise_for :users
   root to: 'posts#new'
-  resources :posts
+  resources :posts, only: [:new, :create, :index]
 end
