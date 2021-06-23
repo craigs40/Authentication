@@ -9,11 +9,10 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.user_id = current_user.id
-    render 'index' if @post.save
+    @post.user.id = current_user.id
   end
 
   def index
-    @posts = Post.all
+    @post = Post.all
   end
 end
