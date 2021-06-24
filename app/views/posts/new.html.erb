@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>MembersOnly</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<h1>New Post</h1>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <h1>New Post</h1>
-    <form>
-      <label for="title">Title:</label><br>
-      <input type="text" id="title" name="title"><br>
-
-      <label for="body">Message:</label><br>
-      <textarea type="text" id="body" name="body"></textarea><br>
-
-      <input type="submit">
-    </form>
-    <%= link_to "index", "posts/index" %>
-  </body>
-</html>
+<%= form_with model: @post do |form| %>
+  <%= form.text_field :title %>
+  <br><br>
+  <%= form.text_area :body, size: "60x10" %>
+  <br><br>
+  <%= form.submit %>
+<% end %>
