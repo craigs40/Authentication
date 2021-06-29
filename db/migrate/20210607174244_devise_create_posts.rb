@@ -2,7 +2,8 @@ class DeviseCreatePosts < ActiveRecord::Migration[6.1]
   def change
     create_table :posts do |t|
       ## Database authenticatable
-      t.string :email, null: false, default: ''
+      t.string :title, null: false, default: ''
+      t.text :body
       t.string :encrypted_password, null: false, default: ''
 
       ## Recoverable
