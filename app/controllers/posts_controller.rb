@@ -1,16 +1,19 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
+
   def new
     @post = Post.new
-    @posts = Post.all
   end
 
   def create
     @post = Post.new(post_params)
-    @post.user.id = current_user.id
+    @post.user = current_user
     if @post.save
-      redirect_to @post
+      redirect_to action: 'index'
+    else
+      redirect_to action: 'new'
     end
   end
 
