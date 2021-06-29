@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: %i[new create]
+  before_action :authenticate_user!, only: %i[new create index]
 
   def new
     @post = Post.new
@@ -7,7 +7,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.user = current_user
     if @post.save
       redirect_to action: 'index'
     else
