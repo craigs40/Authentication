@@ -2,16 +2,19 @@
 
 <div class="post-info">
   <% if signed_in? %>
-    <h4><%=@post.title %></h4><br>
-    <p>
-      <strong>Posted by: <%= "(#{current_user.id})" %></strong>
-      <br>
-      <%= @post.body %>
-    </p>
-    <% else %>
-    <h4><%=@post.title %></h4><br>
-    <p>
-      <%= @post.body %>
-    </p>
+    <% @posts.each do |post| %>
+    <tr>
+        <td><%= post.title %></td>
+    </tr>
+    <br>
+    <tr>
+        <td><%= post.body %></td>
+    </tr>
+    <br>
+    <tr>
+        <strong>Posted by: <%= "user (#{current_user.id})" %></strong>
+    </tr>
+    <br><br>
     <% end %>
+  <% end %>
 </div>

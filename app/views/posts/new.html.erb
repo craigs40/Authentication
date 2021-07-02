@@ -7,7 +7,8 @@
   <%= form.label :message %><br />
   <%= form.text_area :body, size: "60x10" %>
   <br><br>
+  <% form.hidden_field :user_id, value: current_user.id %>
   <%= form.submit %>
-<% end %>
+<% end %><br><br>
 
 <%= link_to 'index', posts_path(@post) %>
