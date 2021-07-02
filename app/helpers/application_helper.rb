@@ -1,2 +1,2 @@
-odule ApplicationHelper
+module ApplicationHelper
 end
