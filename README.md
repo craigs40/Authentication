@@ -37,11 +37,13 @@ Step 2. Open Terminal/Ubuntu.
 
 Step 3. Navigate to the location of the clone.
 
-Step 4. Run `rails db:create` and then run `rails db:migrate`
+Step 4. Run `bundle install`
 
-Step 5. Run `rails server` or `rails s` and hit Enter.
+Step 5. Run `rails db:create` and then run `rails db:migrate`
 
-Step 6. In a new browser window, type `localhost:3000` in the address bar and hit Enter.
+Step 6. Run `rails server` or `rails s` and hit Enter.
+
+Step 7. In a new browser window, type `localhost:3000` in the address bar and hit Enter.
 
 
 ## Authors
