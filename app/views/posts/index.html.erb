@@ -1,0 +1,22 @@
+<h1>All Posts</h1>
+
+<div class="post-info">
+  <% if signed_in? %>
+    <% @posts.each do |post| %>
+    <tr>
+        <td><%= post.title %></td>
+    </tr>
+    <br>
+    <tr>
+        <td><%= post.body %></td>
+    </tr>
+    <br>
+    <tr>
+        <strong>Posted by: <%= "user (#{current_user.id})" %></strong>
+    </tr>
+    <br><br>
+    <% end %>
+  <% end %>
+</div>
+
+<%= link_to 'New Post', new_post_url %>
